@@ -11,7 +11,7 @@ See `defaults/main.yml`
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `bootstrap_apt_packages` | `jq, vim, python3-pip` | list of apt packages for installing |
-| `bootstrap_timezone` | `Europe/London` | host timezone |
+| `bootstrap_timezone` | `Asia/Dubai` | host timezone |
 | `bootstrap_hostname` | `{{ inventory_hostname }}` | host FQDN |
 | `bootstrap_ntp_install` | `true` | NTP service installation and configuration flag |
 | `bootstrap_ntp_servers` | Ubuntu NTP servers | list of NTP servers |

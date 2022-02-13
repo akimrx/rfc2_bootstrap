@@ -8,6 +8,15 @@
     - bootstrap
     - bootstrap-packages
 
+- name: bootstrap - install tzdata
+  apt:
+    name: tzdata
+    state: present
+    update_cache: yes
+  tags:
+    - bootstrap
+    - bootstrap-timezone
+
 - name: bootstrap - set timezone
   timezone:
     name: "{{ bootstrap_timezone }}"
