@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: akimrx
+  description: Example bootstrap
+  company: noname
+  license: license (MIT)
+  min_ansible_version: 2.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - bionic
+    - focal
+  galaxy_tags:
+    - rfc2_bootstrap

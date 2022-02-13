@@ -1,0 +1,8 @@
+---
+bootstrap_apt_packages:
+  - vim
+  - jq
+  - python3-pip
+
+bootstrap_timezone: Europe/London
+bootstrap_hostname: "{{ inventory_hostname }}"

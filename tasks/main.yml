@@ -1,0 +1,23 @@
+---
+- name: bootstrap - install base packages
+  apt:
+    name: "{{ bootstrap_apt_packages }}"
+    state: present
+    update_cache: yes
+  tags:
+    - bootstrap
+    - bootstrap-packages
+
+- name: bootstrap - set timezone
+  timezone:
+    name: "{{ bootstrap_timezone }}"
+  tags:
+    - bootstrap
+    - bootstrap-timezone
+
+- name: bootstrap - set hostname
+  hostname:
+    name: "{{ bootstrap_hostname }}"
+  tags:
+    - bootstrap
+    - bootstrap-hostname
