@@ -6,3 +6,11 @@ bootstrap_apt_packages:
 
 bootstrap_timezone: Europe/London
 bootstrap_hostname: "{{ inventory_hostname }}"
+
+bootstrap_install_ntp: true
+bootstrap_ntp_servers:
+  - ntp0.NL.net
+  - clock.isc.org
+  - ntp2.vniiftri.ru
+  - ntps1-0.eecsit.tu-berlin.de
+  - ntp.ix.ru

@@ -21,3 +21,21 @@
   tags:
     - bootstrap
     - bootstrap-hostname
+
+- name: bootstrap - install & configure NTP
+  block:
+    - name: bootstrap - install NTP package
+      apt:
+        name: ntp
+        state: present
+        update_cache: yes
+    - name: bootstrap - configure NTP service
+      template:
+        src: templates/ntp.conf.j2
+        dest: /etc/ntp.conf
+      notify:
+        - ntp - restart
+  when: bootstrap_install_ntp
+  tags:
+    - bootstrap
+    - bootstrap-ntp

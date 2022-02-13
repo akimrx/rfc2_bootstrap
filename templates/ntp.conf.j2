@@ -1,0 +1,3 @@
+{% for ntp_host in bootstrap_ntp_servers %}
+server {{ ntp_host }} iburst
+{% endfor %}

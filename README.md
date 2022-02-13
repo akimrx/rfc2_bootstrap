@@ -8,9 +8,15 @@ Role Variables
 
 See `defaults/main.yml`
 
-* `bootstrap_apt_packages` - list of apt packages for installing
-* `bootstrap_timezone` - host TZ, example `Europe/Moscow`
-* `bootstrap_hostname` - host FQDN, default `{{ inventory_hostname }}`
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `bootstrap_apt_packages` | `jq, vim, python3-pip` | list of apt packages for installing |
+| `bootstrap_timezone` | `Europe/London` | host timezone |
+| `bootstrap_hostname` | `{{ inventory_hostname }}` | host FQDN |
+| `bootstrap_ntp_install` | `true` | NTP service installation and configuration flag |
+| `bootstrap_ntp_servers` | Ubuntu NTP servers | list of NTP servers |
+
+> Using NTP is only available in version 1.0.1 or higher.
 
 
 Example Playbook
