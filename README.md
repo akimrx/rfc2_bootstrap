@@ -1,3 +1,5 @@
+![Role tests](https://github.com/akimrx/rfc2_bootstrap/actions/workflows/ci.yml/badge.svg)
+
 Role Name
 =========
 
